@@ -210,7 +210,7 @@ export default function HomePage() {
               <div className="flex flex-col gap-4">
                 {[
                   "Same-day & next-day dispatch — No waiting around for days",
-                  "2500 Cummins + professional trailer setup — Built for heavy loads",
+                  "3500 Cummins + professional trailer setup — Built for heavy loads",
                   "Available across BC & Western Canada — From coast to pipeline",
                   "Clear communication — Real-time updates from pickup to drop-off",
                   "Competitive rates, no hidden fees — What we quote is what you pay",
@@ -226,8 +226,8 @@ export default function HomePage() {
             <div className="reveal">
               <div className="relative rounded-2xl overflow-hidden border border-white/[0.08]">
                 <Image
-                  src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80"
-                  alt="Heavy duty Ram 2500 truck with flatbed trailer hauling equipment on a highway"
+                  src="/truck-and-trailer.jpg"
+                  alt="RYDI Ram 3500 truck with MAXX-D trailer hauling a CASE excavator"
                   width={800}
                   height={600}
                   className="w-full h-auto"
@@ -400,7 +400,7 @@ export default function HomePage() {
             {[
               { icon: "🛡️", title: "Fully Insured", desc: "Your load is protected from pickup to delivery. Peace of mind included on every haul." },
               { icon: "⏱️", title: "On-Time, Every Time", desc: "We do not miss deadlines. Real-time updates so you always know where your load is." },
-              { icon: "💪", title: "Heavy-Duty Setup", desc: "2500 Cummins diesel + professional trailer. Built for the tough hauls others turn down." },
+              { icon: "💪", title: "Heavy-Duty Setup", desc: "3500 Cummins diesel + professional trailer. Built for the tough hauls others turn down." },
             ].map((t, i) => (
               <div key={i} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8 text-center reveal">
                 <div className="w-12 h-12 bg-orange-500/15 rounded-xl flex items-center justify-center text-[22px] mx-auto mb-4">{t.icon}</div>
