@@ -36,11 +36,9 @@ export default function HomePage() {
     const form = formRef.current;
     if (!form) return;
 
-    // Honeypot check
     const honeypot = form.querySelector('input[name="_gotcha"]') as HTMLInputElement;
     if (honeypot?.value) return;
 
-    // Validate
     const required = form.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>("[required]");
     let valid = true;
     required.forEach((field) => {
@@ -120,7 +118,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="min-h-screen flex items-center justify-center text-center px-6 pt-36 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#1e1b4b] -z-20" />
-        <div className="absolute inset-0 -z-10 opacity-50" style={{ backgroundImage: "url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")" }} />
+        <div className="absolute inset-0 -z-10 opacity-30 bg-[radial-gradient(circle_at_center,_rgba(249,115,22,0.08)_0%,_transparent_70%)]" />
         <div className="relative z-10 max-w-[900px]">
           <div className="inline-flex items-center gap-2 bg-orange-500/15 border border-orange-500/30 text-orange-500 px-5 py-2 rounded-full text-[13px] font-semibold uppercase tracking-wider mb-6">
             <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
